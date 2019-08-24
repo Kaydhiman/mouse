@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style>
+		.out{
+			width:30px;
+			height:50px;
+			border:2px solid #ccc;
+			border-radius:30px;
+			position:relative;
+			top:200px;
+			left:500px;
+			overflow:hidden;
+		}
+		.inner{
+			width:8px;
+			height:15px;
+			background:#ccc;
+			border-radius:30px;
+			position:absolute;
+			top:40%;
+			left:35%;
+			animation:abc 1.5s infinite;
+		}
+		@keyframes abc{
+			0%{top:-10px;}
+			100%{top:40%; display:none;}
+		}
+		
+	</style>
+</head>
+<body>
+	<a href="#"><div class="out">
+		<div class="inner"></div>
+	</div></a>
+</body>
+</html>
